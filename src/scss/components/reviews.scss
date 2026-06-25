@@ -1,0 +1,152 @@
+.reviews-section {
+  @include media(desktop) {
+  }
+}
+
+.reviews-section-wrapper {
+  padding-top: 96px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    max-width: 1440px;
+  }
+}
+
+.reviews-container {
+  @include media(desktop) {
+  }
+}
+
+.reviews-title {
+  @include media(desktop) {
+  }
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.reviews-list-item {
+  border: 2px solid #272e2f;
+  border-radius: 8px;
+  padding: 38px 22px 22px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+
+  &:nth-child(1) {
+    background: #f808a4;
+  }
+
+  &:nth-child(2) {
+    background: #f8ac18;
+  }
+
+  &:nth-child(3) {
+    background: #a2f819;
+
+    .reviews-item-title {
+      color: #272e2f;
+    }
+
+    .reviews-item-text {
+      color: #272e2f;
+    }
+
+    .reviews-item-name {
+      color: #272e2f;
+    }
+  }
+
+  @include media(desktop) {
+    max-width: 416px;
+  }
+}
+
+.quote-icon {
+  position: absolute;
+  top: -10%;
+  left: 14px;
+
+  @include media(desktop) {
+    top: -12%;
+  }
+}
+
+.reviews-item-text-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #fff;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media(desktop) {
+    margin-top: auto;
+  }
+}
+
+.reviews-item-name {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-rating-wrapper {
+  display: flex;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.star-icon {
+  min-width: 24px;
+
+  @include media(desktop) {
+  }
+}

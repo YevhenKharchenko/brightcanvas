@@ -1,0 +1,138 @@
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-section-wrapper {
+  padding-top: 96px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    max-width: 1440px;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 24px;
+  }
+}
+
+.features-list-item {
+  border: 2px solid #272e2f;
+  border-radius: 8px;
+  padding: 38px 22px 22px;
+  position: relative;
+
+  &:nth-child(1) {
+    background: #f8ac18;
+
+    .features-img {
+      top: -20%;
+      right: 8px;
+
+      @include media(desktop) {
+        top: -16%;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    background: #f808a4;
+
+    .features-img {
+      top: -12%;
+      right: 14px;
+
+      @include media(desktop) {
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    background: #1928f8;
+
+    .features-img {
+      top: -12%;
+      right: 14px;
+
+      @include media(desktop) {
+      }
+    }
+  }
+
+  &:nth-child(4) {
+    background: #a2f819;
+
+    .features-img {
+      top: -16%;
+      right: 14px;
+
+      @include media(desktop) {
+      }
+    }
+
+    .features-item-title {
+      color: #272e2f;
+    }
+
+    .features-item-text {
+      color: #272e2f;
+    }
+  }
+
+  @include media(desktop) {
+    max-width: 306px;
+    min-height: 240px;
+  }
+}
+
+.features-img {
+  position: absolute;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #fff;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-text {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+
+  @include media(desktop) {
+  }
+}
