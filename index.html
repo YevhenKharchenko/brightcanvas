@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Painting — Simple Drawing & Creative Sketch App</title>
+    <meta
+      name="description"
+      content="Create sketches and drawings with Canvas Painting. A simple and fun app with colorful tools and a clean canvas for unlimited creativity."
+    />
+    <link rel="canonical" href="https://brightcanvas.online/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="/brightcanvas/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/brightcanvas/commonHelpers3.js"></script>
+    <link rel="stylesheet" href="/brightcanvas/assets/styles-b00f768d.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="header-wrapper">
+    <div class="header-bg-wrapper">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="header-logo-link">
+            <picture>
+              <source
+                srcset="/brightcanvas/assets/header-logo-desk-accdbe22.png "
+                media="(min-width: 1440px)"
+                width="98"
+                height="63"
+              />
+              <source
+                srcset="/brightcanvas/assets/header-logo-mob-975e072b.png "
+                width="67"
+                height="43"
+              />
+              <img
+                class="header-logo-img"
+                src="/brightcanvas/assets/header-logo-mob-975e072b.png"
+                alt="Logo"
+                width="67"
+                height="43"
+              />
+            </picture>
+          </a>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#home">Home</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#about">The Canvas</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#features"
+                >Your First Line</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#gameplay">Tools</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link" href="./index.html#cta">Creativity</a>
+            </li>
+          </ul>
+          <a
+            class="header-cta-link"
+            href="https://play.google.com/store/apps/details?id=com.BP96STUDIO.CanvasPainting&hl=en&gl=us"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg class="header-cta-icon" width="29" height="29">
+              <use href="/brightcanvas/assets/sprite-232cf28c.svg#icon-download"></use>
+            </svg>
+            <p class="header-cta-text">Download</p></a
+          >
+          <button class="nav-btn" type="button" aria-label="Open mobile menu">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="/brightcanvas/assets/sprite-232cf28c.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <div class="container context-container">
+    <button class="close-btn" type="button" aria-label="Close mobile menu">
+      <svg class="close-icon" width="24" height="24">
+        <use href="/brightcanvas/assets/sprite-232cf28c.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="context-nav">
+      <ul class="context-nav-list">
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#about">The Canvas</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#features"
+            >Your First Line</a
+          >
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gameplay">Tools</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#cta">Creativity</a>
+        </li>
+      </ul>
+      <a
+        class="context-cta-link"
+        href="https://play.google.com/store/apps/details?id=com.BP96STUDIO.CanvasPainting&hl=en&gl=us"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="context-cta-icon" width="29" height="29">
+          <use href="/brightcanvas/assets/sprite-232cf28c.svg#icon-download"></use>
+        </svg>
+        <p class="context-cta-text">Download</p></a
+      >
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-title">It Starts With Nothing</h1>
+          <div class="hero-text-container">
+            <p class="hero-text">
+              A blank screen.<br />
+              No instructions. No pressure. No expectations.
+            </p>
+            <p class="hero-text">
+              Nothing but empty space staring back at you.
+            </p>
+            <p class="hero-text">
+              You tap the screen and suddenly there's this crooked line - not
+              what you expected, but it's a start. It's not perfect, but hey,
+              it's yours.<br />
+              That’s how it begins.
+            </p>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="/brightcanvas/assets/hero-img-desk-9c93e9ce.png "
+            media="(min-width: 1440px)"
+            width="658"
+            height="410"
+          />
+          <source
+            srcset="/brightcanvas/assets/hero-img-mob-9d736429.png "
+            width="310"
+            height="193"
+          />
+          <img
+            class="hero-img"
+            src="/brightcanvas/assets/hero-img-mob-9d736429.png"
+            alt="Screenshot of the game"
+            width="310"
+            height="193"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about-section section" id="about">
+  <div class="about-section-wrapper">
+    <div class="container about-container">
+      <div class="about-content-wrapper">
+        <div class="about-text-wrapper">
+          <h2 class="section-title about-title">You Don’t Need to Be Good</h2>
+          <div class="about-text-container">
+            <p class="about-text">There’s no right way to draw here.</p>
+            <p class="about-text">
+              No rules about proportions. No need for perfect shapes. Move your
+              finger around, pick whatever color feels right, and see what
+              happens.
+            </p>
+            <p class="about-text">
+              You try something small. Maybe a word. Maybe a shape. Maybe
+              nothing that makes sense.<br />
+              Honestly? Honestly, that weird little scribble I made was way more
+              fun than I thought it'd be.
+            </p>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="/brightcanvas/assets/about-img-desk-8a3d1336.png "
+            media="(min-width: 1440px)"
+            width="654"
+            height="434"
+          />
+          <source
+            srcset="/brightcanvas/assets/about-img-mob-509ff942.png "
+            width="329"
+            height="218"
+          />
+          <img
+            class="about-img"
+            src="/brightcanvas/assets/about-img-mob-509ff942.png"
+            alt="Screenshot of the game"
+            width="329"
+            height="218"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="features-section section" id="features">
+  <div class="features-section-wrapper">
+    <div class="container features-container">
+      <h2 class="section-title features-title">
+        We kept it simple - just the basics you actually need.
+      </h2>
+      <p class="features-text">
+        We kept it really simple because, let's be real, nobody wants to hunt
+        through tons of menus when you just wanna doodle something quick.<br />
+        What you can do:
+      </p>
+      <ul class="features-list">
+        <li class="features-list-item">
+          <picture>
+            <source
+              srcset="/brightcanvas/assets/features-img1-desk-1dbe1698.png "
+              media="(min-width: 1440px)"
+              width="102"
+              height="103"
+            />
+            <source
+              srcset="/brightcanvas/assets/features-img1-mob-d87e330d.png "
+              width="51"
+              height="52"
+            />
+            <img
+              class="features-img"
+              src="/brightcanvas/assets/features-img1-mob-d87e330d.png"
+              alt="Screenshot of the game"
+              width="51"
+              height="52"
+            />
+          </picture>
+          <p class="features-item-text">Choose colors from a bright palette</p>
+        </li>
+        <li class="features-list-item">
+          <picture>
+            <source
+              srcset="/brightcanvas/assets/features-img2-desk-d23695bb.png "
+              media="(min-width: 1440px)"
+              width="102"
+              height="103"
+            />
+            <source
+              srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAA0CAYAAAAnpACSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAABw9JREFUeAHtWUmIHFUYfq9erV1VXXtXV1dv09OkzYhjpJW4wqhBhbggMoIXlYAXD4p6EEQkqOhRPIoeFEFRweWgaEQQccEcouIaEVTiSpRIVjRxyv9/XTVWJtOZ6o5mRuwPpnrqLf97//v3V4RMMMEEawk097cUAvmPADfPN9vpd6xGt7PFDbxtmq7ttB1nR9xu3Ih9c3NzIlnjYPjo9Xqm5TsvC4KQwGsC3CWiKO5nAksEShPLtp9Px1OyBrGoTtVG415KBc4ApfSw5bqvhXF8OfZVms2OKEgL8G8yPTtbIWsQXF1O2bChrWrabpJKwrDtR2dmZuTcOK56hmm+hWNq7fZVZE1hbsBIEEX3C3SgUpph7Gz0erV0BMuN5szomvojCDGpTU83yBoBJVuJ0O/3Jcs0PiRcpYTED8PrFvuXsQc/is7EsaqqfUfWCPgJt/rrI8bYgkTFBH4Pud1uOe1nwyZ6QXgXBamYlvUsWQPgpz3Vm+qBcSeKJIOXkn5O+wQy3DtxdQSP9gf8JFEnapJV9mRcdbqzs3VkBG1ElqUv074VY4Zpu7ejY1AU7aMcvVUBZwS8kwEqNWBEUT5I+1aK5kIQBAalhDuIarvdJsdRxZMB1juvZ3IbAWZAIl9k7SvM46ev6fobdODpnsu3n3RksUJSpZ8YRHTQ+91pV5F0RPSiaD38JngIvGWOrFoaMwh0lr5NYAJG9AS0xCZFEsV00wJjPJDaQXArWWXQqNk8H90p6nytWzuDDM+Ej5qHjxK4YFkQE1lSvknbV00quDDEQpqIoCJuXL02bS+SvguVRmOaYIJJWeLH8ToyXtr/j9gWN2ytpL3NQLVKemlbvr3IXLCtfQIwopRKrxTYmJDNw9KgMTV1QXzqutNzfSfGVNyKNwsDgz+SNhVREb6obupPYHqD3i9tYyvNsdu2XXbsl2RJOgCv3I2XSvqubrerkBNgRgBSFJhIGKQqYS0cJbtlcbdbx0QSN+NGwWXHXQcG1ut1zQ0rj6BzoZwB7Rfbs+82yvbbnEZgP0TGBD8BN3CekZkECaFeNJ5kmyOSonwliVJS0ox3jzOXSzms1zeC9A9L4CQEgR12wvC0bECn07GQwbJtP07GhNDewCM0P6XBKReP1pWocgn3fKCe4MJVsrzRS/hwqt7NuA6D8aquvk6W2IZb8e/A/qAWbCFjgC9c0o3P0HDLTvmptL2IvnKG4XQXBNic7ftzQ8ZxRqBsfgxTIvR0thfckvYdZZMiEw+hurbWtyIyBmjcDs9GiTBRzAy3iDvNjP5JZEQrmZl6LZ3LNws53ad4D4Be0vf9M/N9GT2v5m0iaD+6+T4ZGfODk5UUaQ/qqReHF5PiHoRhTEFp4gZS77OUEU5f1rRdEpYNTDzgum5W/+TXGWiHabyHtCpxfDoZIz7R2lTtCp4M/l0FFiEyqFNkeRcyA0XXncPGgES+ZowXcvvI/Dwjy8cPCLaVaQGDrSzuyvZGRmEEH4qq7EbjDUeTCrFd9x6BCKiae9KmvMPIAujPiiQl4OUOkByDy+1D0zRehrvVYJ6MAdo5rY4uEVyx8n3aVkQqA6NP6xvH8TeTow+B96uqup2B6xVFdiilOyz40tSGElGRv8vTGAm2Z76JRGpTzSvICFJxK5V70MbY0aUzgpcNkA69iHRBvQ6mqjVsc2ndo23H8V6lsomMEfXp+n4rQvUSJXF/nvBK8/ABN5QLjLDE87yzcvP4yetG+WGUmARBkQyuYo93yoLl+32MObKsfpu1kVERNYMH8XQd13p5hGnUrbiX4iFA/rQ9tzhnxHRMfgsjwnWs1bSclRjBh6LIPxCUSuhtJMcyUkxKuqHtRCKtmdZFZATR6rqxg3JDrc6QXNZr2vaWzE17YbixwGaoEwTnY4BUFPWTJeMXPR7eHdS6jSvDevhwUA2ejtvxA83Z5vX1c+raIiXTMd5DA01v5QvHFvBQB8HN/pa+c4lYoXcx0kL1Mn3n8tyGhoH3MRncNsyDEvuUtG1xTtSKrinp2i/ZhQhNk1gyuMtOVFle8GPzpcXPCt2NEMC2FtfRRqNRo4M6JztJEjTjebwj4Jd8nnd1xvQKpGiqVpA5lN7J2vDhhv5NsqruxUwB1bVslb9QTf1Nw9N3xJ3oNkhzNvc3dSzdVD72WsYbZFxEU1ELF5Ek6Sd8d1z3VWQC0xSwpXMLMsJh2dYLDK92oRptNptOEAc3KJq8l0LskiXxCHzbebzWq/WWnbx1DCdxDDP9qMQlo+l/8ns0HrGl/dV2tZ0OKbwIGP7Xiqz8buj6rxCTjqAdopqWHeOZMAz13NB/7Wsb9Tv+OlCzHYZpfG4H7n25BUdatBr7F8qSvF+W5T1w27nPCpwH/Z5vpt0n5bJwubxqnIXzdOiQ9gkmmGCCCSaYYIL/A/4C6VtbIXuZGr0AAAAASUVORK5CYII= "
+              width="51"
+              height="52"
+            />
+            <img
+              class="features-img"
+              src="data:image/png;base64,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"
+              alt="Screenshot of the game"
+              width="51"
+              height="52"
+            />
+          </picture>
+          <p class="features-item-text">Draw freely on the canvas</p>
+        </li>
+        <li class="features-list-item">
+          <picture>
+            <source
+              srcset="/brightcanvas/assets/features-img3-desk-f97e7de5.png "
+              media="(min-width: 1440px)"
+              width="102"
+              height="103"
+            />
+            <source
+              srcset="data:image/png;base64,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 "
+              width="51"
+              height="52"
+            />
+            <img
+              class="features-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADMAAAA0CAYAAAAnpACSAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAC2dJREFUeAHtWXtwVNUZP49799597+YdCO+HlalUoVNaRcmjBIFoQQkPFadVJ/jsTMeprz/q2v5hp850xulMq3SkdapjSxhbFbLJksdSR8ARtPigCgUEgQASNslmd+/rnNPvXFiNNIEQwmM6fH/s3T333HO/3/f8nbMIXZEr8n8puP8PIb75+3xEQRdJKmNIScaQ89g/rgqYuq/BRCbyqf4tGL+3Wd6PCURiGHF0uUuso9I12sr4pF9VNYfE/LYCUZuIirltIbEwXtx9f+v0G+X9+rX1FJ2HjJiLB5PKDvBIFXJubx79VsabqbMNjHyWt13V6IE+I7tY8YqwwSw0Ri2/4+Wa3a9JQI1LGxm63KRhG1Ll9bbEqDULNkXF7PV+cV9y6o395yyNj3muuikk5rYHxV2JiSvkWN6Tl43kFbojMf752o6IuGl9UDS0j5/l3oP86D/nzqaxj1TFg6JqY1DUt4x9Vo41vDhTRZeD1K9Fbuzf3TL2kZq2sLipOSzu2zi5Uo7lgeRFhqG8rlhf8YuqpqCY1x4SK9rHvSTHLjmgfKn9ccuUudWJkKhMhMXKlvHL5djpQPLSsO2k0svXj36qJg4hBx5a3jJqtXvvUgHKA3kwMe3a6ragqG6LiCVNFc/JsVjHmdtAXukVb4x5tLY1JGqg6i1rHftH9962iw0IgEgwD8SnXzU77hfzkgXiR01lf5W3zgYkL3lAy+IVT1THw2JuS1Qs2lD+6sk1LmJRiMUQaXhzalFNc1DUthaK+euLWl0Fz9GqM/Meio95sKoJjAI5t7S5/OKFXCVYLRaLkZqWiD0/WSTqmks+luND9chA68nrsqZRj8xNRIQs68s2jnKrXL64XBDJv/iHGwp6ajdGxMKWwhPuS8X5vTRf5VY2j105DwrJwmRY3NM2bvGZnjkvBpDv7rUbCk8I3YkiRzFv8FwT+OTLpGhcis67i0uDNGLElm4oi+V8xtM2qDsRlQdLNu3MQliPHI/Lh1BdvLhzAYRWTTxix0SlMtJhkM+hujdLPlr8drFY3lHxl8HmEjQMaXgRqTHwyNLEuA+Y7pTlcjabZHvD6Jkkb6wfWea7fdV2W1bJSQXRJdmsiSxuzx1s7jknqFwYY2Qvax73u6O061qP5UEdN/eoInkdXf10p+w0Ao2wwPvEE2/njnk8oC4f3AHn5JlTQMRDLdNmdSonHi5WAwLDErcnyrYkq5JOZXLkK02+ER92yFLpIk3Q9webey5gsFz14U3TJ+zE+7f6uY6Ctu9BQpmdVa1ZdU1Fu2QxGMmckfRHGu+B+ITpXbznBQFuCZHA44PtTocMBhZAj7fODO2yDuzVqRdFkPb3NTV7X5gemVhsGCbjOp8yP16wT1axymH2l28AiZ3ceTa0TZ6xW0ntkJuJoONLvFi9a8dgJXjIYKSFDvAjcaLA5spU/v1a7cHbZEf2rt+enuMtDiALWVjH42/dWHJYemgwUjkUkd6VpXdV6+Qf7GFHt/s1BRHD8+m62s55bl8bibxclChKV8G+5Kebrp7SX9n6enj5x9M8c94ImQs7CsTC5oIvJVcbTsjJSimvd0ODvHljWNzcERZL2srelWNnYxTnZD1KaRdWBPRGFomhr63T2IjYJzt3sqrQDL+RY4ZQRdGC5khKhty5eEiG5+pVUCnjo35zSKReRxSjAA++sq7myCx5T7YDNFJgAkxvZ4yh7ox5i3S1jOuvAIHisvOvml8bSGftrNBwuLY50iXjfigeck9vQNklzeXrTyjZnxNI0hISfWxdzcGV0lvJswCRMmQ6s1bU053PNIoPbizqyjE7MilQfsMfrv90c75c5+flFU/5QgeJTsuglBozUyVhVL/TibkbhdPiXW4dTn1d1FF4wFFwhWU6aKwIzX6p9sA7sSF4JC9D9gwAwTIpsYl3KlgVB6xj79yfnHydBNK/VOY5WWtdb7li0E9txdHfi3b2oc/He2LIhfLVXDcEYeSx5LTS+YmIlWWswsxxZxIfW+oCkWdpQwQyZDCudeAAb0lb+VZTs6/XFIVhhs1d5rH3H/rnt6YOBEjGeFPd8atzaWePzYW6eVd35liy2Bd75iQgd00IwXvbpty0wzrYKTxYwTZKR3vK/GVbPjzuzjnHQ8GzggEQrpsXthRsdjx8lmUgHvDqyEMVtUgPWAfFic8aNk+85nRA+Qa66da+ydRSPnQEJ7stM923eLq3vvGkxe9qH/PLL9DRTQhoit/2bEss6A5BDLDY02hYtOiMOSOVkVa+taVoK/bjWT6uOV+m00TXFVTsDwmgSaIzfZwpmGrFJPrdl6v3bHebXT96nl9j7luRfyle/B3GhPNtvWLiXqNzXYY432M2QqV6+NnXqg88ld9SoGHKoGDyZ8OL20v3moRNEAZnfk3D0UAQn8ikuWGbWNc0xLiDCUFOH3PU0SL8/T9Vf/5uHoBcp/8Z8qLW0iMM7ICEQwTmyM5iPloPz1hTvW8HzJNhN2wgUshgACtnzPTAy/ts6oz3MMKCXi8qD0XxR537RLeRRgqlKKBqosAbErbNaYHqNw6ynq13to5Z5vaXUw0u+85V/jsSo56vbgnlICuKLeYQx+Yo7HhbxpVM0F+q2vfhKcDnBeQrxU+Xe5snTT5Mju8G09ql/ghlcO7Sle4loyIFvM8yiG3bQjJADk+XB6NoX/cxYDKq0HXVPtKX1iq0oic8VP19n9H3ZAr1PUmoggS3UTEOveG1/T/jfnR8zezP0ucbVqfLgAUAIuoG6lER5QrtMbIolU2TiYXl4ovUUcIdLjNTZB0bR7UAP5rugasfhjkxLEfRkGofSnf9+ojV1dtLjScZTPYbyobxvCjyavXBRRVbPtsvgcj3jCSQQcF4iWcvhVZWGA5iG3Ii5PGJVDaDIlqIQ5lFOdPCUW+AH+5LYY1qwmYO5gI7ULFsn/BsiSi+/SpDRyK2/spUUlrx+vyjdanU3j633MYu3H8wAxI3jBnTVBVlcjkBSQ+IKUoZvUglinQK8mmqkIppigpATCQwFgpBihfp2/8274s531jsZJHF8mACXWAZuM+AsbuzWaRSCplBhckt6CsqMh0bqAoVXsWHDPADhcd9Hi/pzmVQwKML8Ez0f9bCw+sZw5EBwbC0sDCobUCZSpsZYkNzAOMj8BKnQEC6c2nMuI3BhaIr18srwoU455jgBd6DLqEMCIYrWB4dIAg16lO9kCWcIkxE1rCI9EBQ97n80LItrFAFZy0LKhuccjj4MgSjMiVtmkhXvSxjZAmDUsUYp9Izx3pTbq705nLYq3qQaVjCC/nFAbKmiSC6hDIwmJyThU6PDncfJQHdx2XAA++Crm+ByzzieKYHlQRCKG3mRGm4AKdyGUHANVTQS/pv8YAM4JVbDu3gGdGrEd1xHA7lVwUwHAKNItktMSjeZxjAALwEajJgBUZDZUnXP0AXWE7tXAds9gNzM0iIn7SMu+4Q7t2uUcWEOuzBcirwKcCEmeAMS0YmuLs344xzShUCxcF0cqQTsMNXuEEV4TAHyWflFAK+Q4RhBSnwINQUgsE2BPJNmogjbjNBqAo/gbnJLRuDByl8nirv1CSZEk2f88K8PceGDkZuh6G53ROfOPswPf62h3hhLQaHWBTZQHMtB1ghqMs5KArKyAM1zqDRwJ7dBqXk8YnpcmohfQZX0AXmCKADFJ4DYwBaF6ALVKoB5y+IE3gLMAyXKsEcwIhkVfUQFTnCcXUoMwsf/fMt//nt0MGgr9lubO00T6efTQdj+pAlbAydk6lgXocwoUCVc+SJKVMAl6kBbbAJdk9XOHQdWREBigKqOwJsDkchpiI4daj0hAcIt409mMhmqnEmoJnBs1yxKaAH/ieNIIgOjdlEtlyT5jJHVt++v7M/K78iV+SKXBFX/gsfzJBXftjo0QAAAABJRU5ErkJggg=="
+              alt="Screenshot of the game"
+              width="51"
+              height="52"
+            />
+          </picture>
+          <p class="features-item-text">Switch tools instantly</p>
+        </li>
+        <li class="features-list-item">
+          <picture>
+            <source
+              srcset="/brightcanvas/assets/features-img4-desk-cd67ceb3.png "
+              media="(min-width: 1440px)"
+              width="102"
+              height="103"
+            />
+            <source
+              srcset="data:image/png;base64,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 "
+              width="51"
+              height="52"
+            />
+            <img
+              class="features-img"
+              src="data:image/png;base64,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"
+              alt="Screenshot of the game"
+              width="51"
+              height="52"
+            />
+          </picture>
+          <p class="features-item-text">Erase, redraw, try again</p>
+        </li>
+      </ul>
+      <p class="features-bottom-text">
+        No fancy features to confuse you - just draw.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="gameplay-section section" id="gameplay">
+  <div class="gameplay-section-wrapper">
+    <div class="container gameplay-container">
+      <div class="gameplay-content-wrapper">
+        <div class="gameplay-text-wrapper">
+          <h2 class="section-title gameplay-title">
+            It’s Not About the Result
+          </h2>
+          <div class="gameplay-text-container">
+            <p class="gameplay-text">
+              At some point, you stop thinking about what you’re making.
+            </p>
+            <p class="gameplay-text">You just draw.</p>
+            <p class="gameplay-text">
+              Lines turn into shapes. Shapes turn into something unexpected. And
+              even if it doesn’t look “finished,” it still feels complete.<br />
+              Whatever you make is yours - could be a total disaster or
+              something weird, but who cares?
+            </p>
+          </div>
+        </div>
+        <picture>
+          <source
+            srcset="/brightcanvas/assets/gameplay-img-desk-d5db76b8.png "
+            media="(min-width: 1440px)"
+            width="743"
+            height="424"
+          />
+          <source
+            srcset="/brightcanvas/assets/gameplay-img-mob-1f0a37e9.png "
+            width="293"
+            height="167"
+          />
+          <img
+            class="gameplay-img"
+            src="/brightcanvas/assets/gameplay-img-mob-1f0a37e9.png"
+            alt="Screenshot of the game"
+            width="293"
+            height="167"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section cta-section" id="cta">
+  <div class="cta-bg-wrapper">
+    <div class="container cta-container">
+      <div class="cta-content-wrapper">
+        <h2 class="section-title cta-title">Just Make the First Line</h2>
+        <p class="cta-text">
+          You don’t need a plan.<br />
+          You don’t need a goal.<br />
+          Just start.
+        </p>
+        <a
+          class="cta-link"
+          href="https://play.google.com/store/apps/details?id=com.BP96STUDIO.CanvasPainting&hl=en&gl=us"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="cta-icon" width="17" height="17">
+            <use href="/brightcanvas/assets/sprite-232cf28c.svg#icon-download"></use>
+          </svg>
+          <p class="cta-link-text">Download Canvas Painting</p></a
+        >
+        <p class="cta-bottom-text">
+          Version 2.0 · Updated Feb 28, 2026 · Android 7.1+ · 100+ downloads
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="footer-bg-wrapper">
+    <div class="container footer-container">
+      <div class="footer-content-wrapper">
+        <nav class="footer-nav">
+          <a href="./index.html" class="footer-logo-link">
+            <img
+              class="footer-logo-img"
+              src="/brightcanvas/assets/footer-logo-9a8fa3b4.png"
+              alt="Screenshot of the game"
+              width="112"
+              height="72"
+          /></a>
+          <ul class="footer-list">
+            <li class="footer-list-item">
+              <a class="footer-link" href="./privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-list-item">
+              <a class="footer-link" href="./terms-and-conditions.html"
+                >Terms and Conditions</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-text">
+          © 2026 brightcanvas.online — All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
