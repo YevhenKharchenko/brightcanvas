@@ -1,106 +1,90 @@
 .policy-section {
-  padding-top: 230px;
+  background: #fff;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-bg-wrapper {
+  padding-top: 100px;
   padding-bottom: 80px;
-  background-image: url(../img/policy/policy-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 238px;
+    padding-top: 140px;
     padding-bottom: 100px;
-    background-image: url(../img/policy/policy-bg-desk.png);
+    max-width: 1440px;
   }
 }
 
-.policy-section h1 {
-  font-family: 'Luckiest Guy', sans-serif;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 1;
+.policy-main-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 0.01em;
   text-align: center;
-  color: #fff;
-  margin-bottom: 246px;
+  color: #1e1e1e;
+  margin-bottom: 30px;
 
   @include media(desktop) {
-    font-size: 64px;
-    margin-bottom: 258px;
+    font-size: 50px;
+    margin-bottom: 50px;
   }
 }
 
-.policy-section h2 {
-  font-family: 'Luckiest Guy', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  color: #272e2f;
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-    font-size: 48px;
-  }
-}
-
-.policy-section h3 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #272e2f;
-  margin-bottom: 16px;
-  word-break: break-all;
-
-  @include media(desktop) {
-  }
-}
-
-.policy-section h4 {
-  font-family: 'Lato', sans-serif;
+.policy-title {
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.5;
-  color: #272e2f;
+  color: #1e1e1e;
   margin-bottom: 16px;
-  word-break: break-all;
 
   @include media(desktop) {
+    font-size: 30px;
   }
 }
 
-.policy-section p {
-  font-family: 'Lato', sans-serif;
+.policy-text {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #272e2f;
-  margin-bottom: 16px;
+  font-size: 14px;
+  color: #1e1e1e;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
   @include media(desktop) {
+    font-size: 24px;
   }
 }
-.policy-section li {
-  font-family: 'Lato', sans-serif;
+
+.policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.policy-item {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #272e2f;
-  margin-bottom: 16px;
+  font-size: 14px;
+  color: #1e1e1e;
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
 
   @include media(desktop) {
+    font-size: 24px;
   }
 }
 
-.policy-section a {
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  word-break: break-all;
-
-  @include media(desktop) {
-  }
+.policy-span {
+  font-weight: 700;
 }
 
-.policy-section span {
-  @include media(desktop) {
-  }
+.policy-link {
+  font-weight: 700;
 }

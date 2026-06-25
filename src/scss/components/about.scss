@@ -1,63 +1,64 @@
-.gameplay-section {
+.about-section {
+  background: #fefcf3;
+
   @include media(desktop) {
   }
 }
 
-.gameplay-section-wrapper {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.about-section-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 34px;
+    padding-bottom: 0;
     max-width: 1440px;
   }
 }
 
-.gameplay-container {
+.about-container {
   @include media(desktop) {
-    padding: 0;
+    padding: 0 48px;
   }
 }
 
-.gameplay-title {
+.about-title {
   @include media(desktop) {
   }
 }
 
-.gameplay-content-wrapper {
+.about-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 42px;
-  max-width: 293px;
+  gap: 20px;
+  max-width: 330px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     max-width: max-content;
-    margin-right: 0;
   }
 }
 
-.gameplay-text-wrapper {
+.about-text-wrapper {
   @include media(desktop) {
-    max-width: 567px;
+    max-width: 644px;
   }
 }
 
-.gameplay-title {
+.about-title {
   @include media(desktop) {
   }
 }
 
-.gameplay-text-container {
+.about-text-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -67,7 +68,7 @@
   }
 }
 
-.gameplay-text {
+.about-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -78,12 +79,12 @@
   }
 }
 
-.gameplay-img {
+.about-img {
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     margin: 0;
-    min-width: 743px;
+    min-width: 654px;
   }
 }
