@@ -1,5 +1,5 @@
 .header {
-  background: transparent;
+  background: #fff;
   position: fixed;
   width: 100%;
   top: 0;
@@ -15,13 +15,13 @@
 }
 
 .header-bg-wrapper {
-  padding-top: 6px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding-top: 16px;
     max-width: 1440px;
   }
 }
@@ -32,15 +32,11 @@
 }
 
 .nav {
-  background: #fff;
-  border-radius: 8px;
-  padding: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @include media(desktop) {
-    padding: 16px 24px;
   }
 }
 
@@ -48,28 +44,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 
   @include media(desktop) {
   }
 }
 
 .header-logo-img {
-  min-width: 70px;
-
-  @include media(desktop) {
-  }
-}
-
-.header-logo-span {
-  font-family: 'Luckiest Guy', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.16667;
-  color: #d4101b;
-
-  @include media(desktop) {
-  }
 }
 
 .nav-list {
@@ -79,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 30px;
   }
 }
 
@@ -90,16 +70,47 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #272e2f;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #1e1e1e;
   transition: color 0.3s ease-in-out;
 
   &:hover,
   &.active {
+  }
+}
+
+.header-cta-link {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #0c6bf5;
+    border-radius: 20px;
+    padding: 11px 50px;
+    max-width: max-content;
+  }
+}
+
+.header-cta-icon {
+  @include media(desktop) {
+    min-width: 29px;
+  }
+}
+
+.header-cta-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
   }
 }
 
@@ -114,4 +125,5 @@
 }
 
 .menu-icon {
+  stroke: #000;
 }

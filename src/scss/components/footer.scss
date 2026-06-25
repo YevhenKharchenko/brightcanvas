@@ -1,24 +1,27 @@
 .footer {
-  background: #088df2;
-
   @include media(desktop) {
   }
 }
 
 .footer-bg-wrapper {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
+    padding-top: 110px;
+    padding-bottom: 10px;
     max-width: 1440px;
   }
 }
 
 .footer-container {
+  padding: 0 26px;
+
   @include media(desktop) {
+    padding: 0 116px;
   }
 }
 
@@ -31,55 +34,44 @@
   }
 }
 
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    margin-bottom: 50px;
+  }
+}
+
 .footer-logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 
   @include media(desktop) {
   }
 }
 
 .footer-logo-img {
-  min-width: 70px;
+  min-width: 112px;
 
   @include media(desktop) {
-  }
-}
-
-.footer-logo-span {
-  font-family: 'Luckiest Guy', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.16667;
-  color: #fff;
-
-  @include media(desktop) {
-  }
-}
-
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  margin-bottom: 40px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
   }
 }
 
 .footer-list {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 32px;
+  align-items: end;
+  gap: 10px;
 
   @include media(desktop) {
+    gap: 20px;
   }
 }
 
@@ -93,24 +85,24 @@
   justify-content: center;
   align-items: center;
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: right;
+  color: #1e1e1e;
 
   @include media(desktop) {
+    font-size: 20px;
   }
 }
 
 .footer-text {
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 800;
+  font-size: 12px;
   text-align: center;
-  color: #fff;
+  color: #1e1e1e;
 
   @include media(desktop) {
+    font-size: 20px;
   }
 }
